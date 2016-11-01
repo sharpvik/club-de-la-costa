@@ -96,14 +96,12 @@ header {
         transform: rotate(-45deg);
         width: 25px !important;
         margin-left: -5px;
-        margin-top: 0.5px;
         @include transition(all, 0.3s);
     }
     .bottomer {
         transform: rotate(45deg);
         width: 25px !important;
         margin-left: -5px;
-        margin-top: 0.5px;
         @include transition(all, 0.3s);
     }
 }
