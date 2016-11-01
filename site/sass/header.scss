@@ -1,0 +1,135 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background: {
+        image: url(../images/header_image.jpg);
+        size: cover;
+    }
+    height: 600px;
+    min-height: 70px;
+    
+    .overflow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $blue;
+        opacity: 0.7;
+    }
+    
+    .wrapper {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 10px 50px;
+        z-index: 1;
+        
+        .logo {
+            width: 50px;
+        }
+        
+        nav {
+            float: right;
+            
+            .nav_link {
+                line-height: 50px;
+                height: 50px;
+                font-size: 18px;
+                padding: 0 8px;
+                color: white;
+                text-decoration: none;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        .hamburger {
+            display: none;
+            float: right;
+            height: 24px;
+            margin: 13px 0;
+            flex-direction: column;
+            justify-content: space-around;
+            cursor: pointer;
+            
+            .burger_line {
+                width: 32px;
+                height: 3px;
+                background: white;
+                @include transition(all, 0.3s);
+            }
+            
+            &:hover > .longer {
+                width: 40px;
+                @include transition(all, 0.3s);
+            }
+        }
+    }
+    
+    .description {
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+        
+        h1 {
+            font-weight: 300;
+            font-size: 40px;
+        }
+        h2 {
+            font-weight: 300;
+            width: 400px;
+        }
+    }
+}
+
+
+
+// Media
+@media screen and (max-width: 820px) {
+    nav {
+        display: none;
+    }
+    .hamburger {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 400px;
+    }
+    
+    .wrapper {
+        padding: 10px 20px !important;
+    }
+    
+    .description {
+        left: 20px !important;
+        bottom: 20px !important;
+        
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 16px;
+            width: 300px !important;
+        }
+    }
+} 
+
+@media screen and (max-width: 350px) {
+    .description {
+        h1 {
+            font-size: 25px !important;
+        }
+        h2 {
+            font-size: 14px;
+            width: 280px !important;
+        }
+    }
+}

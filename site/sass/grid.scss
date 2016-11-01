@@ -1,0 +1,30 @@
+.g-flex {
+    display: flex;
+}
+
+// Directions
+.g-dir-row {
+    flex-direction: row;
+}
+
+.g-dir-col {
+    flex-direction: column;
+}
+
+// Aligns 
+.g-hor-ali {
+    justify-content: space-around;
+}
+
+.g-ver-ali {
+    align-content: center;
+}
+
+// Columns
+.g-half {
+    width: 50%;
+}
+
+
+
+// Medias

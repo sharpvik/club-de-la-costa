@@ -1,0 +1,5 @@
+# This is the license file for the club-la-costa project.
+
+# I don't really mind if you take my code and change it, use it, copy some parts of it.
+
+# If you want to sell the website that is based on my code, pleace be sure to change its design so it is totally authentic. 
