@@ -22,11 +22,13 @@ $(document).ready(function() {
             scrollPos = $(window).scrollTop();
         
             $('.description').css('opacity',1-(scrollPos/100));
+            $('.description').css('bottom',20-(scrollPos/2) + 'px');
         } else {
             headerHeight = $('header').height();
             scrollPos = $(window).scrollTop();
         
             $('.description').css('opacity',1-(scrollPos/300));
+            $('.description').css('bottom',50-(scrollPos/2) + 'px');
         }
         
     } headerFadeOut();

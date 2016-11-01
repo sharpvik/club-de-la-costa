@@ -80,6 +80,14 @@ header {
             width: 400px;
         }
     }
+    
+    
+    @media screen and (max-width: 550px) {
+        .description {
+            left: 20px;
+            bottom: 20px;
+        }
+    }
 }
 
 // Toggling classes
@@ -121,10 +129,7 @@ header {
         padding: 10px 20px !important;
     }
     
-    .description {
-        left: 20px !important;
-        bottom: 20px !important;
-        
+    .description {        
         h1 {
             font-size: 30px;
         }
