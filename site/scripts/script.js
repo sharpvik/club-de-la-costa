@@ -56,5 +56,16 @@ $(document).ready(function() {
     $(window).resize(function() {
         
     });
+    
+    
+    
+    // Hamburger menu
+    
+        // Hamburger
+        $('.hamburger').on('click', function() {
+            $(this).toggleClass('hamburger_clicked');
+        });
+    
+    
 });
     
