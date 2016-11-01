@@ -94,12 +94,15 @@ header {
     header .description h2 {
       font-weight: 300;
       width: 400px; }
+  @media screen and (max-width: 550px) {
+    header .description {
+      left: 20px;
+      bottom: 20px; } }
 
 .hamburger_clicked .topper {
   transform: rotate(-45deg);
   width: 25px !important;
   margin-left: -5px;
-  margin-top: 0.5px;
   transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -110,7 +113,6 @@ header {
   transform: rotate(45deg);
   width: 25px !important;
   margin-left: -5px;
-  margin-top: 0.5px;
   transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -128,14 +130,11 @@ header {
     height: 400px; }
   .wrapper {
     padding: 10px 20px !important; }
-  .description {
-    left: 20px !important;
-    bottom: 20px !important; }
-    .description h1 {
-      font-size: 30px; }
-    .description h2 {
-      font-size: 16px;
-      width: 300px !important; } }
+  .description h1 {
+    font-size: 30px; }
+  .description h2 {
+    font-size: 16px;
+    width: 300px !important; } }
 
 @media screen and (max-width: 350px) {
   .description h1 {
