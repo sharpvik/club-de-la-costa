@@ -40,7 +40,8 @@ header {
   background-image: url(../images/header_image.jpg);
   background-size: cover;
   height: 600px;
-  min-height: 70px; }
+  min-height: 70px;
+  overflow: hidden; }
   header .overflow {
     position: absolute;
     height: 100%;
