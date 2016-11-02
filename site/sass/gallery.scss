@@ -23,6 +23,13 @@
             font-weight: 300;
             margin-bottom: 50px;
         }
+        
+        //Media 
+        @media screen and (max-width: 650px) {
+            .subtitle {
+                margin-bottom: 20px;
+            }
+        }
     }
     
     .gallery_row {
@@ -43,7 +50,7 @@
             .gallery_image {
                 width: 40%;
                 height: 40%;
-                margin: 30px auto;
+                margin: 20px auto;
             }
         }
     }
@@ -55,7 +62,6 @@
             .gallery_image {
                 width: 90%;
                 height: 90%;
-                margin: 20px auto;
             }
         }
     }

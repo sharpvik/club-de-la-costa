@@ -162,6 +162,9 @@ header {
       text-align: center;
       font-weight: 300;
       margin-bottom: 50px; }
+    @media screen and (max-width: 650px) {
+      .section a .subtitle {
+        margin-bottom: 20px; } }
   .section .gallery_row {
     margin-bottom: 50px;
     flex-direction: row;
@@ -174,11 +177,10 @@ header {
     .section .gallery_row .gallery_image {
       width: 40%;
       height: 40%;
-      margin: 30px auto; } }
+      margin: 20px auto; } }
   @media screen and (max-width: 450px) {
     .section .gallery_row {
       flex-direction: column; }
       .section .gallery_row .gallery_image {
         width: 90%;
-        height: 90%;
-        margin: 20px auto; } }
+        height: 90%; } }
