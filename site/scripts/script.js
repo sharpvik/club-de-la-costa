@@ -46,6 +46,10 @@ $(document).ready(function() {
         $('header').css('height', headerInitial - scrollPos + 'px');
     } headerCollapse();
     
+    
+    
+    
+    
 
     
 
@@ -54,9 +58,9 @@ $(document).ready(function() {
         headerFadeOut();
         headerCollapse();
         headerFadeIn();
+
     });
     $(window).resize(function() {
-        
     });
     
     
