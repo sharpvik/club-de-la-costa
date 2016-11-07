@@ -190,6 +190,9 @@ header {
 .events_left {
   background-color: #00539f; }
 
+.hidden_event {
+  display: none; }
+
 .soonest_image {
   display: block;
   margin: auto;
@@ -200,7 +203,8 @@ header {
 .soonest_name {
   color: white;
   text-align: center;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-weight: 500; }
 
 .soonest_date {
   color: white;
@@ -212,7 +216,7 @@ header {
   background: white;
   border: 2px solid white;
   color: #00539f;
-  padding: 8px 18px;
+  padding: 8px 23px;
   font-size: 18px;
   font-weight: 400;
   margin: 30px auto;
@@ -231,9 +235,28 @@ header {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s; }
 
+@media screen and (min-width: 1387px) {
+  .hidden_event {
+    display: block; }
+  .events_left {
+    width: 70%;
+    flex-direction: row;
+    align-items: center; }
+    .events_left .soonest_image {
+      width: 60%; } }
+
+@media screen and (min-width: 1040px) {
+  .soonest_image {
+    width: 60%; } }
+
+@media screen and (max-width: 700px) {
+  .insight {
+    flex-direction: column; }
+    .insight .events_left, .insight .events_right {
+      width: 100%; } }
+
 .events_right {
-  background-color: #002b53;
-  overflow-y: scroll; }
+  background-color: #002b53; }
 
 .later_event {
   margin: 20px 0 30px 20px;
@@ -249,6 +272,15 @@ header {
     display: inline-block;
     vertical-align: middle; }
   .later_event .later_name {
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: 500; }
   .later_event .later_date {
     font-weight: 300; }
+
+@media screen and (min-width: 1387px) {
+  .events_right {
+    width: 30%; } }
+
+@media screen and (max-width: 350px) {
+  .later_name {
+    font-size: 18px !important; } }

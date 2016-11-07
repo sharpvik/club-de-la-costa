@@ -4,8 +4,7 @@ $(document).ready(function() {
     var scrollPos = $(window).scrollTop(),
         headerHeight = $('header').height(),
         headerInitial = headerHeight,
-        overflowOpacity = (0.7 + (scrollPos/(headerInitial + 500))),
-        leftHeight = 128 + $('.soonest_image').height() + $('.soonest_name').height() + $('.soonest_date').height() + $('.soonest_button').height();
+        overflowOpacity = (0.7 + (scrollPos/(headerInitial + 500)));
     
     
     
@@ -49,9 +48,7 @@ $(document).ready(function() {
     
     
     
-    function eventsHeight() {
-        $('.insight').css('height', leftHeight + 'px');
-    } eventsHeight();
+    
     
 
     
@@ -61,10 +58,9 @@ $(document).ready(function() {
         headerFadeOut();
         headerCollapse();
         headerFadeIn();
-        eventsHeight();
+
     });
     $(window).resize(function() {
-        eventsHeight();
     });
     
     
