@@ -1,0 +1,125 @@
+// Left part
+.events_left {
+    background-color: $blue;
+}
+
+.hidden_event {
+    display: none;
+}
+
+.soonest_image {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+    border: 4px solid white;
+}
+
+.soonest_name {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.soonest_date {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.soonest_button {
+    display: block;
+    background: white;
+    border: 2px solid white;
+    color: $blue;
+    padding: 8px 23px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px auto;
+    @include transition(all, 0.3s);
+    
+    &:hover {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        @include transition(all, 0.3s);
+    }
+}
+
+    // Media
+@media screen and (min-width: 1387px) {
+    .hidden_event {
+        display: block;
+    }
+    
+    .events_left {
+        width: 70%;
+        flex-direction: row;
+        align-items: center;
+        
+        .soonest_image {
+            width: 60%;
+        }
+    }
+}
+@media screen and (min-width: 1040px) {
+    .soonest_image {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .insight {
+        flex-direction: column;
+        
+        .events_left, .events_right {
+            width: 100%;
+        }
+    }
+}
+
+
+// Right part
+.events_right {
+    background-color: $dark-blue;
+}
+
+.later_event {
+    margin: 20px 0 30px 20px;
+    width: calc(100% - 30px);
+    color: white;
+    
+    .later_ava {
+        display: inline-block;
+        width: 70px;
+        border: 4px solid white;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .later_description {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .later_name {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .later_date {
+        font-weight: 300;
+    }
+}
+
+    // Media 
+@media screen and (min-width: 1387px) {
+    .events_right {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .later_name {
+        font-size: 18px !important;
+    }
+}
