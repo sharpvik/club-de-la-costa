@@ -3,13 +3,10 @@
     background-color: $blue;
 }
 
-<<<<<<< HEAD
-=======
 .hidden_event {
     display: none;
 }
 
->>>>>>> patch-1
 .soonest_image {
     display: block;
     margin: auto;
@@ -22,10 +19,7 @@
     color: white;
     text-align: center;
     margin-top: 10px;
-<<<<<<< HEAD
-=======
     font-weight: 500;
->>>>>>> patch-1
 }
 
 .soonest_date {
@@ -39,11 +33,7 @@
     background: white;
     border: 2px solid white;
     color: $blue;
-<<<<<<< HEAD
-    padding: 8px 18px;
-=======
     padding: 8px 23px;
->>>>>>> patch-1
     font-size: 18px;
     font-weight: 400;
     margin: 30px auto;
@@ -58,9 +48,6 @@
 }
 
     // Media
-<<<<<<< HEAD
-
-=======
 @media screen and (min-width: 1387px) {
     .hidden_event {
         display: block;
@@ -90,16 +77,11 @@
         }
     }
 }
->>>>>>> patch-1
 
 
 // Right part
 .events_right {
     background-color: $dark-blue;
-<<<<<<< HEAD
-    overflow-y: scroll;
-=======
->>>>>>> patch-1
 }
 
 .later_event {
@@ -121,20 +103,14 @@
     }
 
     .later_name {
-<<<<<<< HEAD
-        font-size: 20px
-=======
         font-size: 20px;
         font-weight: 500;
->>>>>>> patch-1
     }
 
     .later_date {
         font-weight: 300;
     }
 }
-<<<<<<< HEAD
-=======
 
     // Media 
 @media screen and (min-width: 1387px) {
@@ -147,4 +123,3 @@
         font-size: 18px !important;
     }
 }
->>>>>>> patch-1

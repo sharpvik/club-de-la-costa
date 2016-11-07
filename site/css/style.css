@@ -186,8 +186,6 @@ header {
       .section .gallery_row .gallery_image {
         width: 90%;
         height: 90%; } }
-<<<<<<< HEAD
-=======
 
 .events_left {
   background-color: #00539f; }
@@ -286,4 +284,3 @@ header {
 @media screen and (max-width: 350px) {
   .later_name {
     font-size: 18px !important; } }
->>>>>>> patch-1
