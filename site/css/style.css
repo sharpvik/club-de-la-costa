@@ -41,7 +41,8 @@ header {
   background-size: cover;
   height: 600px;
   min-height: 70px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 500; }
   header .overflow {
     position: absolute;
     height: 100%;
@@ -53,8 +54,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 10px 50px;
-    z-index: 1; }
+    padding: 10px 50px; }
     header .wrapper .logo {
       width: 50px; }
     header .wrapper nav {
