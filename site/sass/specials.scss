@@ -1,0 +1,153 @@
+.specials_left {
+    background-color: $red;
+}
+
+.calendar_widget {
+    margin: 30px auto;
+    background-color: white;
+    width: 300px;
+}
+
+.dateshower {
+    padding: 5px 0;
+    background-color: $red;
+    width: calc(100% - 6px);
+    margin: 3px auto;
+    color: white;
+    text-align: center;
+} 
+
+.cal-small {
+    font: {
+        weight: 300;
+        size: 18px;
+    }
+    line-height: 35px;
+}
+
+.cal-big {
+    font: {
+        weight: 500;
+        size: 36px;
+    }
+}
+
+.datepicker {
+    width: calc(100% - 6px);
+    margin: auto;
+    margin-bottom: 3px;
+    
+    .datepicker_row {
+        width: 100%;
+        
+        .black_day {
+            color: #666;
+        }
+        .red_day {
+            color: $red;
+        }
+        
+        .day {
+            text-align: center;
+            font: {
+                weight: 300;
+                size: 16px;
+            }
+            cursor: auto;
+        }
+        
+        .date {
+            text-align: center;
+            font: {
+                weight: 400;
+                size: 16px;
+            }
+            line-height: 30px;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: #eee;
+                @include borrad(5px);   
+            }
+        }
+        
+        .no_date {
+            background-color: white !important;
+            cursor: default;
+        }
+    }
+}
+
+.picked_date {
+    background-color: $red !important;
+    color: white;
+    @include borrad(5px);
+}
+
+// Media
+
+.specials_right {
+    border: 5px solid $red;
+    padding: 15px 20px;
+    
+    h2 {
+        font-weight: 500;
+    }
+    h3 {
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    button {
+        display: block;
+        margin: 25px auto 10px auto;
+        background-color: $red;
+        border: 2px solid $red;
+        color: white;
+        padding: 8px 23px;
+        font-size: 20px;
+        font-weight: 400;
+        @include transition(all, 0.3s);
+
+        &:hover {
+            background: transparent;
+            color: $red;
+            @include transition(all, 0.3s);
+        }
+    }
+}
+
+
+
+// Media 
+@media screen and (min-width: 1200px) {
+    .specials_right {
+        h2 {
+            font-size: 25px;
+        } 
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .insight-2 {
+        flex-direction: column !important;
+    
+        .g-half {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .specials_right {
+        button {
+            font-size: 16px;
+        }
+    }
+}
