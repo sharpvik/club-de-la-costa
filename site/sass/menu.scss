@@ -7,7 +7,9 @@
 
 .menu_item {
     width: 100%;
+    max-width: 950px;
     height: 75px;
+    margin: auto;
     margin-bottom: 20px;
 }
 
@@ -107,5 +109,81 @@
         background: $blue;
         color: white;
         @include transition(all, 0.3s);
+    }
+}
+
+
+
+// Media 
+@media screen and (max-width: 720px) {
+    .food_ava {
+        width: 60px;
+    }
+    .food_description {
+        h2 {
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+    }
+    .food_cost {
+        margin-top: 30px;
+        
+        .cost {
+            font-size: 18px;
+        }
+        .cost_description {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cost_description {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .food_ava {
+        margin-left: 20px;
+    }
+    .food_cost {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .food_ava {
+        display: none;
+    }
+    .food_description { 
+        margin-left: 20px;
+    }
+    .food_cost {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .buttons_container {
+        button {
+            font-size: 16px !important;
+            margin: 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .food_cost {
+        display: none;
+    }
+    .food_description {
+        display: inline-block;
+        margin: auto;
+    }
+    .menu_item {
+        text-align: center;
     }
 }
