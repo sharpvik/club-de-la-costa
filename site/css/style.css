@@ -430,27 +430,26 @@ header {
     .datepicker .datepicker_row .red_day {
       color: #ee3b33; }
     .datepicker .datepicker_row .day {
-      width: 100%;
       text-align: center;
       font-weight: 300;
       font-size: 16px;
       cursor: auto; }
     .datepicker .datepicker_row .date {
-      width: 100%;
       text-align: center;
       font-weight: 400;
       font-size: 16px;
       line-height: 30px;
       cursor: pointer; }
       .datepicker .datepicker_row .date:hover {
-        background-color: #f4f4f4;
+        background-color: #eee;
         border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px; }
     .datepicker .datepicker_row .no_date {
-      background-color: white !important; }
+      background-color: white !important;
+      cursor: default; }
 
 .picked_date {
   background-color: #ee3b33 !important;
@@ -463,7 +462,7 @@ header {
 
 .specials_right {
   border: 5px solid #ee3b33;
-  padding: 15px; }
+  padding: 0 20px; }
   .specials_right h2 {
     font-weight: 500; }
   .specials_right h3 {
