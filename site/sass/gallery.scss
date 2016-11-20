@@ -21,19 +21,6 @@
             color: $red;
             text-decoration: none;
         }
-        
-        .subtitle {
-            text-align: center;
-            font-weight: 300;
-            margin-bottom: 50px;
-        }
-        
-        //Media 
-        @media screen and (max-width: 650px) {
-            .subtitle {
-                margin-bottom: 20px;
-            }
-        }
     }
     
     .gallery_row {
@@ -48,7 +35,15 @@
         }
     }
     
-    // Media 
+.subtitle {
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+    
+    
+    
+    //Media 
     @media screen and (max-width: 650px) {
         .gallery_row {
             .gallery_image {
@@ -57,6 +52,9 @@
                 margin: 20px auto;
             }
         }
+        .subtitle {
+                margin-bottom: 20px;
+            }
     }
     
     @media screen and (max-width: 450px) {
