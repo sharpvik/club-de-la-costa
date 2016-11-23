@@ -216,7 +216,7 @@
                 <div class="calendar_widget">
                     <div class="dateshower">
                         <p class="month cal-small">November</p>
-                        <p class="date cal-big">1st</p>
+                        <p id="current_date" class="date cal-big">1st</p>
                         <p class="year cal-small">2016</p>    
                     </div>
                     
@@ -282,10 +282,10 @@
 
             <div class="specials_right g-half g-flex g-dir-col g-hor-ali">
                 <div>
-                    <h2>Super Mega Special Gods' food</h2>
-                    <h3>Delicious bread with hilarious onions</h3>
+                    <h2 id="special_name">Super Mega Special Gods' food</h2>
+                    <h3 id="special_desc">Delicious bread with hilarious onions</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisi a aliquet pretium, sem lorem iaculis lorem, ut semper lorem justo quis lectus. Integer tincidunt fermentum luctus. In ut est ligula. Aliquam congue felis tortor, nec iaculis leo facilisis ut. Ut vitae mauris arcu. Aliquam feugiat dolor vitae justo auctor, eu sodales odio pretium. Phasellus efficitur condimentum orci, sit amet volutpat justo varius eu. Donec lacinia at sapien ac elementum.</p>
+                    <p id="special_com">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisi a aliquet pretium, sem lorem iaculis lorem, ut semper lorem justo quis lectus. Integer tincidunt fermentum luctus. In ut est ligula. Aliquam congue felis tortor, nec iaculis leo facilisis ut. Ut vitae mauris arcu. Aliquam feugiat dolor vitae justo auctor, eu sodales odio pretium. Phasellus efficitur condimentum orci, sit amet volutpat justo varius eu. Donec lacinia at sapien ac elementum.</p>
 
                     <a href="#order" class="navigator"><button>Order food</button></a>
                 </div>
@@ -302,6 +302,8 @@
     
     <script type="text/javascript" src="libs/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="libs/scrollTo_custom.js"></script>
+    <script type="text/javascript" src="scripts/calendarWidget.js"></script>
+    
     <script src="//localhost:35729/livereload.js"></script>
     
     <script type="text/javascript" src="uglified/script.js"></script>    
