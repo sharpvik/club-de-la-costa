@@ -10,7 +10,7 @@ $(document).ready(function() {
             name, desc, com;
         
         // change the date_current
-        if ( ((dateLastNumber == 1) || (dateLastNumber == 2) || (dateLastNumber == 3)) && ((dateChoice < 11) || (dateChoice > 13)) ) {
+        if ( ((dateLastNumber >= 1) && (dateLastNumber <= 3)) && ((dateChoice < 11) || (dateChoice > 13)) ) {
             if (dateLastNumber == 1) {
                 $("#current_date").html(dateChoice + 'st');
             } else if (dateLastNumber == 2) {

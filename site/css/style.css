@@ -497,7 +497,8 @@ header {
         -webkit-border-radius: 5px; }
     .datepicker .datepicker_row .no_date {
       background-color: white !important;
-      cursor: default; }
+      cursor: default;
+      pointer-events: none; }
 
 .picked_date {
   background-color: #ee3b33 !important;
