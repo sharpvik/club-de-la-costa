@@ -1,0 +1,101 @@
+.phone {
+    text-align: center;
+    font: {
+        size: 60px;
+        weight: 500;
+    }
+    color: $blue;
+}
+
+*::-webkit-input-placeholder {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+	color: #666;
+}
+*:-moz-placeholder {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+	color: #666;
+}
+*::-moz-placeholder {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+	color: #666;
+}
+*:-ms-input-placeholder {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+	color: #666;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+	border: 2px $red solid !important;
+    transition: all 0.5s;
+}
+input:focus:required:valid,
+textarea:focus:required:valid {
+	border: #1de9c7 2px solid !important;
+    transition: all 0.5s;
+}
+input:required:valid,
+textarea:required:valid {
+    border: 2px #1de9c7 solid!important;
+    transition: all 0.5s;
+}
+
+#order_form {
+    display: none; // form will stay hidden
+    width: 50%;
+    margin: auto;
+    
+    .type_of_input {
+        padding-left: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        color: $blue;
+    }
+    
+    input, textarea {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        border: 2px solid $blue;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .submit {
+        width: 100%;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: $red;
+        padding: 10px 0;
+        border: 2px solid $red;
+        @include transition(all, 0.3s);
+        
+        &:hover {
+            background: transparent;
+            color: $red;
+            @include transition(all, 0.3s);
+        }
+    } 
+    
+    .doner {
+        background-color: #1de9c7;
+        border: 2px solid #1de9c7;
+        @include transition(all, 0.3s);
+        
+        &:hover {
+            background-color: #1de9c7;
+            border: 2px solid #1de9c7;
+            color: white;
+            @include transition(all, 0.3s);
+        }
+    }
+}
+
+
+
+// Media 
+@media screen and (max-width: 500px) {
+    .phone {
+        font-size: 30px
+    }
+}
