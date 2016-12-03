@@ -25,6 +25,9 @@ body {
 .g-hor-ali {
   justify-content: space-around; }
 
+.g-bet-ali {
+  justify-content: space-between; }
+
 .g-ver-ali {
   align-content: center; }
 
@@ -428,7 +431,7 @@ header {
   .food_cost {
     margin-top: 15px; } }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 430px) {
   .buttons_container button {
     font-size: 16px !important;
     margin: 0 10px; } }
@@ -557,3 +560,230 @@ header {
 @media screen and (max-width: 416px) {
   .specials_right button {
     font-size: 16px; } }
+
+.phone {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  color: #00539f; }
+
+*::-webkit-input-placeholder {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  color: #666; }
+
+*:-moz-placeholder {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  color: #666; }
+
+*::-moz-placeholder {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  color: #666; }
+
+*:-ms-input-placeholder {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  color: #666; }
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border: 2px #ee3b33 solid !important;
+  transition: all 0.5s; }
+
+input:focus:required:valid,
+textarea:focus:required:valid {
+  border: #1de9c7 2px solid !important;
+  transition: all 0.5s; }
+
+input:required:valid,
+textarea:required:valid {
+  border: 2px #1de9c7 solid !important;
+  transition: all 0.5s; }
+
+#order_form {
+  display: none;
+  width: 50%;
+  margin: auto; }
+  #order_form .type_of_input {
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #00539f; }
+  #order_form input, #order_form textarea {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #00539f;
+    padding: 5px;
+    margin-bottom: 10px; }
+  #order_form .submit {
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #ee3b33;
+    padding: 10px 0;
+    border: 2px solid #ee3b33;
+    transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+    #order_form .submit:hover {
+      background: transparent;
+      color: #ee3b33;
+      transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s; }
+  #order_form .doner {
+    background-color: #1de9c7;
+    border: 2px solid #1de9c7;
+    transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+    #order_form .doner:hover {
+      background-color: #1de9c7;
+      border: 2px solid #1de9c7;
+      color: white;
+      transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s; }
+
+@media screen and (max-width: 500px) {
+  .phone {
+    font-size: 30px; } }
+
+.testimonials {
+  margin-top: 60px;
+  padding: 30px 50px;
+  background-color: #1964a8;
+  color: white; }
+
+.t_avas {
+  margin: auto;
+  width: 500px; }
+
+.t_a_block {
+  display: inline-block;
+  width: 75px;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  cursor: pointer; }
+  .t_a_block .t_ava {
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+  .t_a_block .t_name {
+    text-align: center;
+    font-size: 12px;
+    transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+
+.t_chosen {
+  width: 100px;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s; }
+  .t_chosen .t_ava {
+    opacity: 1; }
+  .t_chosen .t_name {
+    font-size: 16px; }
+
+.t_quote {
+  display: block;
+  margin: 30px auto 0 auto;
+  font-size: 24px;
+  width: 700px;
+  text-align: center; }
+
+@media screen and (max-width: 770px) {
+  .t_avas {
+    width: 350px; }
+  .t_a_block {
+    display: inline-block;
+    width: 75px;
+    transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+    .t_a_block .t_name {
+      text-align: center;
+      font-size: 12px;
+      transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s; }
+    .t_a_block .t_ava {
+      display: block;
+      margin: auto;
+      width: 75%; }
+  .t_chosen {
+    width: 100px;
+    transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+    .t_chosen .t_ava {
+      opacity: 1; }
+    .t_chosen .t_name {
+      font-size: 14px; }
+  .t_quote {
+    width: 75%;
+    font-size: 18px; } }
+
+@media screen and (max-width: 520px) {
+  .testimonials {
+    padding: 30px; }
+  .t_avas {
+    width: 310px; }
+  .t_a_block {
+    display: inline-block;
+    width: 50px;
+    transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+  .t_chosen {
+    width: 80px;
+    transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+    .t_chosen .t_name {
+      font-size: 14px; }
+  .t_quote {
+    width: 90%;
+    font-size: 16px; } }
+
+@media screen and (max-width: 360px) {
+  .t_avas {
+    width: 90%;
+    justify-content: space-between; }
+  .t_quote {
+    font-size: 14px; } }

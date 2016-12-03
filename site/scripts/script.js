@@ -46,7 +46,25 @@ $(document).ready(function() {
         $('header').css('height', headerInitial - scrollPos + 'px');
     } headerCollapse();
     
-    
+    $('.t_a_block').on('click', function() {
+        $('.t_a_block').removeClass('t_chosen');
+        $(this).addClass('t_chosen');
+        
+        var IDnum = $(this).attr('id').slice(-1),
+            quote;
+        switch (IDnum) {
+            case "1": 
+                quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisi a aliquet pretium, sem lorem iaculis lorem, ut semper lorem justo quis lectus.1";
+                break;
+            case "2": 
+                quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisi a aliquet pretium, sem lorem iaculis lorem, ut semper lorem justo quis lectus.2";
+                break;
+            case "3":
+                quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisi a aliquet pretium, sem lorem iaculis lorem, ut semper lorem justo quis lectus.3";
+                break;
+        }
+        $('.t_quote').html(quote);
+    });
     
     
     
@@ -60,7 +78,9 @@ $(document).ready(function() {
         headerFadeIn();
 
     });
+    
     $(window).resize(function() {
+        
     });
     
     
@@ -72,6 +92,32 @@ $(document).ready(function() {
             $(this).toggleClass('hamburger_clicked');
         });
     
+    
+    
+    
+    function toSend() {
+     var x = document.getElementById("in1").value.length,
+          y = document.getElementById("in2").value.length,
+          z = document.getElementById("in3").value.length;
+
+     if ( (x > 0) && (y > 0) && (z > 0) ) {
+       $.ajax({
+         type: "POST",
+         url: "mail.php",
+         data: $("form").serialize()
+       }).done(function() {
+         $('.submit').addClass('doner');
+         $('.submit').html('THANK YOU!');
+       });
+       return false;
+     } else {
+       alert("You did not fill all the fields!");
+     }
+    }
+    
+      //Аякс отправка форм
+  	//Документация: http://api.jquery.com/jquery.ajax/
+  	$("#form").submit( toSend );
     
 });
     
