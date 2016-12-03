@@ -208,15 +208,15 @@
     <!-- SPECIALS START -->
     
     <section class="section" id="specials">
-            <h1 class="title">Want something special?</h1>
-            <h3 class="subtitle">Specials every day!</h3>
+        <h1 class="title">Want something special?</h1>
+        <h3 class="subtitle">Specials every day!</h3>
                 
         <section class="insight-2 g-flex g-dir-row" id="events">
             <div class="specials_left g-flex g-dir-col g-hor-ali g-half">
                 <div class="calendar_widget">
                     <div class="dateshower">
                         <p class="month cal-small">November</p>
-                        <p class="date cal-big">1st</p>
+                        <p id="current_date" class="cal-big">1st</p>
                         <p class="year cal-small">2016</p>    
                     </div>
                     
@@ -282,10 +282,10 @@
 
             <div class="specials_right g-half g-flex g-dir-col g-hor-ali">
                 <div>
-                    <h2>Super Mega Special Gods' food</h2>
-                    <h3>Delicious bread with hilarious onions</h3>
+                    <h2 id="special_name">Super Mega Special Gods' food</h2>
+                    <h3 id="special_desc">Delicious bread with hilarious onions</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisi a aliquet pretium, sem lorem iaculis lorem, ut semper lorem justo quis lectus. Integer tincidunt fermentum luctus. In ut est ligula. Aliquam congue felis tortor, nec iaculis leo facilisis ut. Ut vitae mauris arcu. Aliquam feugiat dolor vitae justo auctor, eu sodales odio pretium. Phasellus efficitur condimentum orci, sit amet volutpat justo varius eu. Donec lacinia at sapien ac elementum.</p>
+                    <p id="special_com">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisi a aliquet pretium, sem lorem iaculis lorem, ut semper lorem justo quis lectus. Integer tincidunt fermentum luctus. In ut est ligula. Aliquam congue felis tortor, nec iaculis leo facilisis ut. Ut vitae mauris arcu. Aliquam feugiat dolor vitae justo auctor, eu sodales odio pretium. Phasellus efficitur condimentum orci, sit amet volutpat justo varius eu. Donec lacinia at sapien ac elementum.</p>
 
                     <a href="#order" class="navigator"><button>Order food</button></a>
                 </div>
@@ -295,13 +295,60 @@
     
     <!-- SPECIALS END -->
     
-    <div class="scroll"></div>
+    <!-- ORDER START -->
     
+    <section class="section" id="order">
+        <h1 class="title">Order some food!</h1>
+        <h3 class="subtitle">Easier than ever!</h3>
+        
+        <p class="phone">(829) 123 4567</p>
+        
+        <!-- form is hidden by CSS property -->
+        <form id="order_form" action="#" method="post">
+            <p class="type_of_input">Your name</p>
+            <input type="text" name="name" placeholder="Miller Brands" required="required" id="in1">
+            
+            <p class="type_of_input">Your phone</p>
+            <input type="email" name="text" placeholder="(829) 132 4567" required="required" id="in2">
+            
+            <p class="type_of_input">What would you like to eat?</p>
+            <textarea name="text" rows="7" maxlength="4000" placeholder="Super Mega Special God's food" required="required" id="in3"></textarea>
+            
+            <button type="submit" class="submit">SEND YOUR ORDER</button>
+        </form>
+    </section>
+    
+    <!-- ORDER END -->
+    
+    <!-- TESTIMONIALS START -->
+    
+    <section class="testimonials" id="testimonials">
+        <div class="t_avas g-flex g-hor-ali">
+            <div class="t_a_block" id="a-1">
+                <img src="images/face.jpg" class="t_ava">
+                <p class="t_name">Brands Miller</p>
+            </div>
+            <div class="t_a_block t_chosen" id="a-2">
+                <img src="images/face.jpg" class="t_ava">
+                <p class="t_name">Miller Brands</p>
+            </div>
+            <div class="t_a_block" id="a-3">
+                <img src="images/face.jpg" class="t_ava">
+                <p class="t_name">Brands Miller</p>
+            </div>
+        </div>
+    
+        <p class="t_quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisi a aliquet pretium, sem lorem iaculis lorem, ut semper lorem justo quis lectus.2</p>
+    </section>
+    
+    <!-- TESTIMONIALS END -->
     
     <!-- SCRIPTS SCRIPTS SCRIPTS -->
     
     <script type="text/javascript" src="libs/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="libs/scrollTo_custom.js"></script>
+    <script type="text/javascript" src="scripts/calendarWidget.js"></script>
+    
     <script src="//localhost:35729/livereload.js"></script>
     
     <script type="text/javascript" src="uglified/script.js"></script>    

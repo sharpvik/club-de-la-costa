@@ -1,0 +1,140 @@
+.testimonials {
+    margin-top: 60px;
+    padding: 30px 50px;
+    background-color: #1964a8;
+    color: white;
+}
+
+.t_avas {
+    margin: auto;
+    width: 500px;
+}
+
+.t_a_block {
+    display: inline-block;
+    width: 75px;
+    @include transition(all, 0.3s);
+    cursor: pointer;
+    
+    .t_ava {
+        width: 100%;
+        opacity: 0.5;
+        @include borrad(50%);
+        @include transition(all, 0.3s);
+    }
+
+    .t_name {
+        text-align: center;
+        font-size: 12px;
+        @include transition(all, 0.3s);
+    }
+}
+
+.t_chosen {
+    width: 100px;
+    @include transition(all, 0.3s);
+    
+    .t_ava {
+        opacity: 1;
+    }
+    
+    .t_name {
+        font-size: 16px;
+    }
+}
+
+
+
+.t_quote {
+    display: block;
+    margin: 30px auto 0 auto;
+    font-size: 24px;
+    width: 700px;
+    text-align: center;
+}
+
+
+
+// Media 
+@media screen and (max-width: 770px) {
+    .t_avas {
+        width: 350px;
+    }
+    
+    .t_a_block {
+        display: inline-block;
+        width: 75px;
+        @include transition(all, 0.3s);
+
+        .t_name {
+            text-align: center;
+            font-size: 12px;
+            @include transition(all, 0.3s);
+        }
+        
+        .t_ava {
+            display: block;
+            margin: auto;
+            width: 75%;
+        }
+    }
+    
+    .t_chosen {
+        width: 100px;
+        @include transition(all, 0.3s);
+
+        .t_ava {
+            opacity: 1;
+        }
+
+        .t_name {
+            font-size: 14px;
+        }
+    }
+    
+    .t_quote {
+        width: 75%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .testimonials {
+        padding: 30px;
+    }
+    
+    .t_avas {
+        width: 310px;
+    }
+    
+    .t_a_block {
+        display: inline-block;
+        width: 50px;
+        @include transition(all, 0.3s);
+    }
+    
+    .t_chosen {
+        width: 80px;
+        @include transition(all, 0.3s);
+
+        .t_name {
+            font-size: 14px;
+        }
+    }
+    
+    .t_quote {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .t_avas {
+        width: 90%;
+        justify-content: space-between;
+    }
+    
+    .t_quote {
+        font-size: 14px;
+    }
+}

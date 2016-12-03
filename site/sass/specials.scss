@@ -74,6 +74,7 @@
         .no_date {
             background-color: white !important;
             cursor: default;
+            pointer-events: none;
         }
     }
 }
