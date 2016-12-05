@@ -793,6 +793,7 @@ textarea:required:valid {
   height: 50vh; }
 
 .logos {
+  min-height: 150px;
   width: 60%;
   margin: auto; }
   .logos .l_big {
