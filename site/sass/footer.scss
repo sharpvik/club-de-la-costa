@@ -1,0 +1,36 @@
+footer {
+    background-color: $red;
+    color: white;
+    padding: 15px 50px;
+}
+
+.my_logo {
+    display: inline-block;
+    
+    img {
+        width: 30px;
+    }
+}
+
+.copyright {
+    display: inline-block;
+    float: right;
+}
+
+
+
+// Media 
+@media screen and (max-width: 650px) {
+    .tempores {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        padding: 15px;
+    }
+    .tempores2 {
+        display: none;
+    }
+}

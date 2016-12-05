@@ -66,6 +66,11 @@ $(document).ready(function() {
         $('.t_quote').html(quote);
     });
     
+    function copyright() {
+        var footerHeight = $('footer').height();
+        $('.copyright').css('line-height', footerHeight + 'px');
+    } copyright();
+    
     
     
 
@@ -76,11 +81,11 @@ $(document).ready(function() {
         headerFadeOut();
         headerCollapse();
         headerFadeIn();
-
+        copyright();
     });
     
     $(window).resize(function() {
-        
+        copyright();
     });
     
     
