@@ -599,7 +599,6 @@ textarea:required:valid {
   transition: all 0.5s; }
 
 #order_form {
-  display: none;
   width: 50%;
   margin: auto; }
   #order_form .type_of_input {
