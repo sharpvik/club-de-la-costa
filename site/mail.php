@@ -1,12 +1,12 @@
 <?php
 
 $recepient = "sharp.vik@gmail.com";
-$sitename = "Victor's kingdom";
+$sitename = "Club de la Costa";
 
 $name = trim($_POST["name"]);
-$email = trim($_POST["email"]);
-$text = trim($_POST["text"]);
+$phone = trim($_POST["phone"]);
+$text = trim($_POST["order"]);
 
-$pagetitle = "Новая заявка с сайта \"$sitename\"";
-$message = "Имя: $name \nE-mail: $email \nТекст: $text";
+$pagetitle = "New order from the website \"$sitename\"";
+$message = "Name: $name \nE-mail: $phone \nText: $text";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");

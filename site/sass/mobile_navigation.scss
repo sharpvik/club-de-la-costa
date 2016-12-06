@@ -1,0 +1,81 @@
+.mob_nav {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    z-index: 1000;
+    background-color: $dark-blue;
+    color: white;
+    -webkit-box-shadow: 0px 10px 25px 5px rgba(102,102,102,0.5);
+    -moz-box-shadow: 0px 10px 25px 5px rgba(102,102,102,0.5);
+    -o-box-shadow: 0px 10px 25px 5px rgba(102,102,102,0.5);
+    -ms-box-shadow: 0px 10px 25px 5px rgba(102,102,102,0.5);
+    box-shadow: 0px 10px 25px 5px rgba(102,102,102,0.5);
+    @include transition(left, 0.3s);
+    
+    a {
+        color: white;
+    }
+}
+
+.back_pic {
+    position: relative;
+    background-image: url(../images/header_image.jpg);
+    background-size: cover;
+    height: 150px;
+}
+
+.mob_overflow {
+    height: 100%;
+    background-color: rgba($blue, 0.7);
+}
+
+.bp_containments {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    
+    img {
+        width: 35%;
+        margin-bottom: 15px;
+    }
+    
+    h2 {
+        font-weight: 500;
+    }
+}
+
+.mob_nav_link {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 16px;
+    @include transition(all, 0.3s);
+}
+
+.mob_nav_shown {
+    left: 0;
+    @include transition(left, 0.3s);
+}
+
+.mob_nav_active {
+    background-color: $blue;
+    @include transition(all, 0.3s);
+}
+
+
+
+// Media 
+@media screen and (min-width: 821px) {
+    .mob_nav {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .mob_nav {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
