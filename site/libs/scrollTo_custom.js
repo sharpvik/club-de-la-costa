@@ -17,9 +17,6 @@ $(document).ready(function() {
         if ( (scrollTop !== targetNumber) && (ifActive !== true) ) {
             ifActive = true;
             
-            console.log(targetNumber);
-            console.log(scrollTop);
-            
             $('html, body').animate({
                 scrollTop: targetNumber
             }, timeToScroll);
