@@ -6,7 +6,7 @@ $(document).ready(function() {
         headerInitial = headerHeight,
         overflowOpacity = (0.7 + (scrollPos/(headerInitial + 500))),
         mobCounter = 0,
-        siteHeight = $('#full_hater').offset().top,
+        siteHeight = $('body').height(),
         winHeight = $(window).height();
     var headerPos = $('#header').offset().top,
             galleryPos = $('#gallery').offset().top,
