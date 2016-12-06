@@ -105,13 +105,13 @@ $(document).ready(function() {
         orderPos = $('#order').offset().top,
         testimonialsPos = $('#testimonials').offset().top,
         aboutPos = $('#about').offset().top,
-        siteHeight = $('#full_hater').offset().top,
+        siteHeight = $('body').height(),
         winHeight = $(window).height();
     } scrollValues();
     
     function mobNavActive() {
         var lastScrollPos = Math.floor(siteHeight) - Math.floor(winHeight);
-        if ( (scrollPos >= aboutPos - 71) || (scrollPos == lastScrollPos) ) {
+        if ( (scrollPos >= aboutPos - 71) || (Math.floor(scrollPos) == lastScrollPos) ) {
             $('.mob_nav_link').removeClass('mob_nav_active');
             $('.mob_about').addClass('mob_nav_active');
         } else if (scrollPos >= testimonialsPos - 71) {
